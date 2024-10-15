@@ -1,28 +1,21 @@
-:root {
-    --fontvar1: "Roboto", system-ui;
-    --clr1: #150b3e;
-    --clr2: #c7d2fe;
-    --clr3: #7c3aed;
-    --clr4: #d4d2db;
-    --clr5: #585076;
-    --clr6: #382f5a;
-    --clr7: #c4c4c4;
+:root{
+    --Clr1: #3367d6;
+    --Clr2: #2850a7;
+    --Clr3: #6697ff;
+    --Clr4: #475569;
+    --Clr5: #64748b;
+    --font1: "Roboto", serif;
 }
 
-* {
-    padding: 0;
+*{
     margin: 0;
-    box-sizing: inherit
+    padding: 0;
+    box-sizing: inherit;
 }
 
-;
+body{box-sizing: border-box;font-family: var(--font1);}
 
-body {
-    box-sizing: border-box;
-    font-family: var(--fontvar1);
+html{
+    font-size: 10px;
 }
 
-html {
-    font-size: 62.5%;
-    font-weight: 400;
-}

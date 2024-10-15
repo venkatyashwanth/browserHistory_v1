@@ -1,0 +1,60 @@
+@import "../scss/common";
+
+.historyHeader {
+    background-color: var(--Clr1);
+    display: flex;
+    column-gap: 12rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    @media all and (max-width: 576px){
+        column-gap: 4rem;
+    }
+    .imageWrapper {
+        width: 8rem;
+        display: flex;
+    }
+
+    .searchContainer {
+        display: flex;
+        background-color: var(--Clr2);
+        border: 1px solid var(--Clr3);
+        width: 60%;
+        max-width: 80rem;
+        border-radius: 5px;
+        .imageWrapper {width: 2rem;border-right: 1px solid var(--Clr3);
+            box-sizing: content-box;padding: .5rem 1.5rem;cursor: pointer;
+        }
+        input[type='search']{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            margin: 0 1rem;
+            color: #fff;
+        }
+    }
+}
+
+.historyElements{
+    background-color: #ececec;
+    padding: 20px;
+    min-height: calc(100vh - 50px);
+    @media all and (max-width: 576px){
+        min-height: calc(100vh - 46px);
+    }
+    .emptyData{
+        display: grid;
+        place-content: center;
+        p{
+            color: var(--Clr4);
+        }
+    }
+    .listElements{
+        background-color: #f8fafc;
+        box-shadow: 0 7px 29px 0 #64646f33;
+        border-radius: 2px;
+        li:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+}

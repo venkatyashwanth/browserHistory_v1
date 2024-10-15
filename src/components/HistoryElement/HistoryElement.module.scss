@@ -1,0 +1,55 @@
+@import "../scss/common";
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.historyContent {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    .timeAccessed{
+        font-family: var(--font1);
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--Clr4);
+    }
+}
+
+.historyData {
+    display: flex;
+    align-items: center;
+
+    .imageWrapper {
+        width: 20px;
+    }
+
+    .title {
+        font-family: var(--font1);
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left: 1rem;
+    }
+
+    .domainUrl {
+        margin-left: .8rem;
+        font-size: 1.4rem;
+        color: var(--Clr5);
+    }
+
+    @media all and (min-width: 576px) {
+        div:nth-child(2) {
+            display: flex;
+        }
+    }
+
+}
+
+.deleteBtn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

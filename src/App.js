@@ -1,10 +1,10 @@
-import Cashwithdrawal from "./components/Cashwithdrawal";
+import HistoryPage from "./components/HistoryPage";
 
 function App() {
   return (
-    <div>
-      <Cashwithdrawal/>
-    </div>
+    <>
+      <HistoryPage/>
+    </>
   );
 }
 
